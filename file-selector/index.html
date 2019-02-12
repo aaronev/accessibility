@@ -6,7 +6,7 @@
   <title>Accessibile File Selector</title> 
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0m shrink-to-fit=no">
-  <style src="./main.css"></style>
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
   <form>
@@ -14,7 +14,9 @@
       <legend>Upload File</legend>
       <label for="file">Select File:
         <div>
-          <input id="file" type="file"/>
+          <input id="file" type="file" tabindex="0" class="visually-hidden" aria-hidden="true"/>
+          <button aria-describedby="visual-text" >Choose File</button>
+          <input id="visual-text" type="text" aria-label="file" value="No File Selected" readonly>
         </div>
       </label>
     </fieldset>
