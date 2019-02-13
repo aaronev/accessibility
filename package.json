@@ -9,7 +9,9 @@
   },
   "author": "Aaron Villanueva",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^2.6.6"
+  },
   "devDependencies": {
     "eslint": "^5.13.0"
   }
