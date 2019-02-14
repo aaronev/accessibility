@@ -11,6 +11,5 @@ document.querySelector('button')
 document.querySelector('input[type=\'file\']')
 .addEventListener('change', function(e) {
   input = e.target;
-  console.log(input.parentNode.children[2]);
   input.parentNode.children[2].value = input.value.split('\\').pop();
 })
