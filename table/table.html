@@ -7,6 +7,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0m shrink-to-fit=no">
     <link rel="stylesheet" href="./main.css">
+    <style>
+      table {
+        border: solid;
+      }
+    </style>
   </head>
   <body>
     <table>
@@ -37,7 +42,55 @@
           <td>Value For Heading 4</td>
         </tr>
       </tbody>
-      <tfoot>This is a footer</tfoot>
+      <tfoot>
+        <tr colspan="4"><td>This is a footer</td></tr>
+      </tfoot>
+    </table>
+    <table>
+      <caption>Accessible Table Within Table</caption>
+      <thead>
+        <th scope="col">Heading 1</th>
+        <th scope="col">Heading 2</th>
+        <th scope="col">Heading 3</th>
+        <th scope="col">Heading 4</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Value For Heading 1</td>
+          <td>Value For Heading 2</td>
+          <td>Value For Heading 3</td>
+          <td>Value For Heading 4</td>
+        </tr>
+        <tr colspan="4">
+          <td>
+            <dl role="grid">
+              <div role="row">
+                <dt role="columnheader">This is a dt</dt>
+                <dd role="cell">This is a dd</dd>
+              </div>
+              <div role="row">
+                <dt role="columnheader">This is a dt</dt>
+                <dd role="cell">This is a dd</dd>
+              </div>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td>Value For Heading 1</td>
+          <td>Value For Heading 2</td>
+          <td>Value For Heading 3</td>
+          <td>Value For Heading 4</td>
+        </tr>
+        <tr>
+          <td>Value For Heading 1</td>
+          <td>Value For Heading 2</td>
+          <td>Value For Heading 3</td>
+          <td>Value For Heading 4</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr colspan="4"><td>This is a footer</td></tr>
+      </tfoot>
     </table>
   </body>
 </html>
